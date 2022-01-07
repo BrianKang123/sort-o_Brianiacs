@@ -2,13 +2,11 @@ import java.util.ArrayList;
 
 public class Driver {
   public static void main(String [] args) {
-    ArrayList testIns = new ArrayList<Integer>();
+    ArrayList testIns = Sorts.populate(15, 0, 100);
     ArrayList testSel = new ArrayList<Integer>();
     ArrayList testBub = new ArrayList<Integer>();
-    //use the Sorts.java methods to create ArrayList?
-    for(int i = 0 ; i < 15 ; i += 1){
-      testIns.add((int)(Math.random() * 100));
-    }
+    //use the Sorts.java methods to optimize randomization?
+    Sorts.shuffle(testIns);
     for(int i = 0 ; i < testIns.size() ; i += 1){
       testSel.add(testIns.get(i));
       testBub.add(testIns.get(i));

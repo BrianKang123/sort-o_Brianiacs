@@ -44,7 +44,8 @@ public class Sorts {
   // postcondition: data's elements sorted in ascending order
   public static void bubbleSortV( ArrayList<Comparable> data )
   {
-    /* YOUR IMPLEMENTATION HERE */
+    int passCount = 0;
+    int compareCount = 0;
     for (int passes = 0; passes < data.size() - 1; passes++){
       for (int num = 0; num < data.size() - 1; num ++){
         Comparable test = data.get(num);
@@ -53,8 +54,11 @@ public class Sorts {
           data.set(num, adj);
           data.set(num+1, test);
         }
+        compareCount += 1;
       }
+      passCount += 1;
     }
+    System.out.println("Bubble sort complete: " + passCount + " passes, and " + compareCount + " comparasions");
   }
 
   // VOID version of SelectionSort
@@ -66,7 +70,8 @@ public class Sorts {
 
      //maxPos will point to position of SELECTION (greatest value)
      int maxPos = 0;
-
+     int passCount = 0;
+     int compareCount = 0;
      for( int pass = 1 ; pass < data.size() ; pass += 1 ) {
        maxPos = 0; //reset maxPos every time
        //System.out.println( "\nbegin pass " + (data.size() - pass) );//diag
@@ -77,6 +82,7 @@ public class Sorts {
            //System.out.println( "maxPos: " + maxPos );//diag
            //System.out.println( data );//diag
          }
+         compareCount += 1;
 
        }
        //swap maxPos and pass values
@@ -84,7 +90,9 @@ public class Sorts {
 
        //System.out.println( "maxPos: " +  maxPos + "\npass: " + pass );//diag
        //System.out.println( "after swap: " +  data );//diag
+       passCount += 1;
      }
+     System.out.println("Selection sort complete: " + passCount + " passes, and " + compareCount + " comparasions");
    }//end selectionSort
 
    // VOID version of InsertionSort
@@ -92,6 +100,8 @@ public class Sorts {
   // postcondition: data's elements sorted in ascending order
   public static void insertionSortV( ArrayList<Comparable> data )
   {
+    int passCount = 0;
+    int compareCount = 0;
     for( int partition = 1 ; partition < data.size() ; partition += 1 ) {
       //partition marks first item in unsorted region
 
@@ -100,7 +110,7 @@ public class Sorts {
 
       //traverse sorted region from right to left
       for( int i = partition ; i > 0 ; i -= 1 ) {
-
+        compareCount += 1;
         // "walk" the current item to where it belongs
         // by swapping adjacent items
         if ( data.get(i).compareTo(data.get(i - 1)) < 0)  {
@@ -108,10 +118,13 @@ public class Sorts {
           //System.out.println( "swap indices "+(i-1)+" & "+i+"..." ); //diag
 
         }
+
         else
           break;
       }
+      passCount += 1;
     }
+    System.out.println("Insertion sort complete: " + passCount + " passes, and " + compareCount + " comparasions");
   }//end insertionSortV
 
 }
