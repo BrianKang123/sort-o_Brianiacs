@@ -1,0 +1,14 @@
+1/6/22:
+  - Created repo
+  - Added Driver.java
+  - Added rudimentary search test in Driver.java
+  - Added Sorts.java
+  - Added insertion sort, selection sort, and bubble sort into Sorts.java
+  - Added populate and shuffle
+  - Added README.md
+  - Added notes.txt
+
+1/7/22:
+  - Updated answers on README.md
+  - Optimized Driver.java with methods from Sorts.java
+  - Added some functionality regarding data acquisition for finding the time complexity of sorts
