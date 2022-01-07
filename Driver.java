@@ -5,6 +5,7 @@ public class Driver {
     ArrayList testIns = new ArrayList<Integer>();
     ArrayList testSel = new ArrayList<Integer>();
     ArrayList testBub = new ArrayList<Integer>();
+    //use the Sorts.java methods to create ArrayList?
     for(int i = 0 ; i < 15 ; i += 1){
       testIns.add((int)(Math.random() * 100));
     }
