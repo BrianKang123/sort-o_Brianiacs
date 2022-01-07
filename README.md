@@ -1,21 +1,21 @@
 # sort-o_Brianiacs
 ## Roster: Jing Yi Feng, Brian Kang, Brian Wang
 
-### Bubble Sort
-#### Best Case
+## Bubble Sort
+### Best Case
 * The best case scenario for Bubble Sort would be when the list is already sorted (elements in ascending order). This would require only one pass.
-#### Worst Case
+### Worst Case
 * The worst case scenario for Bubble Sort would be if the list is sorted in descending order. 
 
-### Selection Sort
-#### Best Case
+## Selection Sort
+### Best Case
 * The best case scenario for Selection Sort would be if the list is already sorted (ascending order)
-#### Worst Case
+### Worst Case
 *
 
-### Insertion Sort
-#### Best Case
+## Insertion Sort
+### Best Case
 *
-#### Worst Case
+### Worst Case
 *
 
