@@ -1,12 +1,4 @@
-/* Brianiacs - Jing Yi Feng, Brian Kang, Brian Wang
-APCS
-Lab04
 
-DISCO
-
-QCC
-
-*/
 
 import java.util.ArrayList;
 
@@ -42,8 +34,10 @@ public class Sorts {
   // VOID version of bubbleSort
   // Rearranges elements of input ArrayList
   // postcondition: data's elements sorted in ascending order
-  public static void bubbleSortV( ArrayList<Comparable> data )
+  // returns an array consisting of [passes, comparisons]
+  public static int[] bubbleSortV( ArrayList<Comparable> data )
   {
+    int[] retInfo = new int[2]; //[passes, comparisons]
     int passCount = 0;
     int compareCount = 0;
     for (int passes = 0; passes < data.size() - 1; passes++){
@@ -58,17 +52,21 @@ public class Sorts {
       }
       passCount += 1;
     }
-    System.out.println("Bubble sort complete: " + passCount + " passes, and " + compareCount + " comparasions");
+    retInfo[0] = passCount;
+    retInfo[1] = compareCount;
+    return retInfo;
   }
 
   // VOID version of SelectionSort
    // Rearranges elements of input ArrayList
    // postcondition: data's elements sorted in ascending order
-   public static void selectionSortV( ArrayList<Comparable> data )
+   // returns an array consisting of [passes, comparisons]
+   public static int[] selectionSortV( ArrayList<Comparable> data )
    {
      //note: this version places greatest value at "rightmost" end
 
      //maxPos will point to position of SELECTION (greatest value)
+     int[] retInfo = new int[2]; //[passes, comparisons]
      int maxPos = 0;
      int passCount = 0;
      int compareCount = 0;
@@ -92,14 +90,18 @@ public class Sorts {
        //System.out.println( "after swap: " +  data );//diag
        passCount += 1;
      }
-     System.out.println("Selection sort complete: " + passCount + " passes, and " + compareCount + " comparasions");
+     retInfo[0] = passCount;
+     retInfo[1] = compareCount;
+     return retInfo;
    }//end selectionSort
 
-   // VOID version of InsertionSort
+  // VOID version of InsertionSort
   // Rearranges elements of input ArrayList
   // postcondition: data's elements sorted in ascending order
-  public static void insertionSortV( ArrayList<Comparable> data )
+  // returns an array consisting of [passes, comparisons]
+  public static int[] insertionSortV( ArrayList<Comparable> data )
   {
+    int[] retInfo = new int[2]; //[passes, comparisons]
     int passCount = 0;
     int compareCount = 0;
     for( int partition = 1 ; partition < data.size() ; partition += 1 ) {
@@ -124,7 +126,9 @@ public class Sorts {
       }
       passCount += 1;
     }
-    System.out.println("Insertion sort complete: " + passCount + " passes, and " + compareCount + " comparasions");
+    retInfo[0] = passCount;
+    retInfo[1] = compareCount;
+    return retInfo;
   }//end insertionSortV
 
 }
