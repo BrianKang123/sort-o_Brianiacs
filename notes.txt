@@ -19,3 +19,8 @@
   - Added more comprehensive tests for the three Sorts
     Tests for lengths 10, 100, 1000, and 10000 are run each 100 times
   - Updated sort methods in Sorts to return statistics 
+  
+1/10/22:
+  - Added algo and examples to README
+  - Added heading to Sorts.java
+  - 
