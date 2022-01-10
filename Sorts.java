@@ -1,4 +1,45 @@
+/*
+ Brianiacs (JingYi Feng, Brian Kang, Brian Wang)
+ APCS pd6
+ Lab04 Never Fear, Big O is Here!
+ 2022-01-10
+ DISCO
+*(selection sort) possible optimization: Ignore final swap
 
+ QCC
+*(selection sort) Why does java like to complain that maxPos might not have been initialized if it is impossible for it to not be initialized? Just a java thing? Because it is in a for?
+
+BUB-QA 
+* q0: If a pass requires no swaps, what do you know?
+ * a0: The array is sorted
+ * q1: After pass p, what do you know?
+ * a1: The first p numbers from the left (assuming the passes start from the right) are correctly ordered
+ * q2: How many passes are necessary to completely sort?
+ * a2: One less than the array length
+
+SEL-QA
+* q0: How many passes to sort n elements?
+* a0: We need n passes to sort n elements because we carefully match each index in consecutive order.
+* q1: What do you know after pass p?
+* a1: p elements are sorted in order
+* q2: How do you know if sorted?
+* a2: We know if the array is sorted if the values are in ascending order. That is, that starting from the end to the start of the array, the value should be decreasing.
+* q3: What does a pass boil down to?
+* a3: A pass boils down to the most simplified version of the array, meaning the array placed in ascending order from left to right.
+* Each n pass symbolizes that n values are in chronological order.
+
+INS-QA
+* q0: How many passes to sort n elements?
+ * a0: We need n-1 passes to sort n elements.
+ * q1: What do you know after pass p?
+ * a1: After pass p, we know that p values are in ascending order.
+ * q2: How will you know when sorted?
+ * a2: We will know when its sorted if we check each value and its greater than its previous term.
+ * q3: What constitues a pass?
+ * a3: A pass is determined when the next index in line is sorted in order.
+ * q4: What must you track?
+ * a4: We must track the value we are trying to sort as we "walk" it down the array.
+*/
 
 import java.util.ArrayList;
 
