@@ -13,7 +13,10 @@ Swaps adjacent elements if they are in the wrong order until entire list is orde
 * The worst case scenario for Bubble Sort's passes would be n-1 as well because like the best case scenario, it disregards the last index. Also, Bubble Sort swaps two at a time, so the worst case for the comparisons would be the same as the best scenario for the comparisons because bubble checks through the entire array each time and on repeat.  
 * Time Complexity: O(n^2)
 ### Explanation/Examples
+```
 [66, 25, 24, 1, 40]
+```
+```
 bubble: 
 [66, 25, 24, 1, 40]
 [66, 25, 1, 24, 40]
@@ -23,24 +26,7 @@ bubble:
 [1, 24, 66, 25, 40]
 [1, 24, 25, 66, 40]
 [1, 24, 25, 40, 66]
-
-insertion: 
-[66, 25, 24, 1, 40]
-[25, 66, 24, 1, 40]
-[25, 24, 66, 1, 40]
-[24, 25, 66, 1, 40]
-[24, 25, 1, 66, 40]
-[24, 1, 25, 66, 40]
-[1, 24, 25, 66, 40]
-[1, 24, 25, 40, 66]
-
-selection: 
-[66, 25, 24, 1, 40]
-[40, 25, 24, 1, 66]
-[1, 25, 24, 40, 66]
-[1, 24, 25, 40, 66]
-[1, 24, 25, 40, 66]
-
+```
 
 ## Selection Sort
 ### Description
