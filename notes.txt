@@ -13,3 +13,9 @@
   - Optimized Driver.java with methods from Sorts.java
   - Added some functionality regarding data acquisition for finding the time complexity of sorts
   - Self note: Add new sort functions to return comparisons and passes
+
+1/9/22:
+  - Updated answers on README.md
+  - Added more comprehensive tests for the three Sorts
+    Tests for lengths 10, 100, 1000, and 10000 are run each 100 times
+  - Updated sort methods in Sorts to return statistics 
