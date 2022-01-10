@@ -3,6 +3,8 @@
 ## SOTW: The Feels by Twice
 
 ## Bubble Sort
+### Description
+Swaps adjacent elements if they are in the wrong order until entire list is ordered. 
 ### Best Case
 * The best case scenario for Bubble Sort's passes would be n-1 because it disregards the last index. Also, our algorithm of Bubble Sort swaps adjacent values by comparing them, and compares them regardless of whether or not they have been previously swapped, or if they are already sorted. The algorithm also will make all the passes through the arrayList regardless of if it is already sorted due to the code not knowing whether or not it is sorted. Therefore, the best and worst cases differ only in the time it takes to actually swap elements.
 ### Worst Case
