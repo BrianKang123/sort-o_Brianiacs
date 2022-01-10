@@ -14,6 +14,7 @@ Swaps adjacent elements if they are in the wrong order until entire list is orde
 * Time Complexity: O(n^2)
 ### Explanation/Examples
 ```
+orginal list
 [66, 25, 24, 1, 40]
 ```
 ```
@@ -38,7 +39,21 @@ Searches for the smallest element in the array and swaps it to the front of the 
 * The worst case scenario for Selection Sort's passes would be n-1 as well because like the best case scenario, it disregards the last index. Also, Selection Sort selects and moves, so the worst scenario for the comparisons would be the same as the best scenario for the comparisons because the function goes through the same iteration of selecting through each value in the array and placing it in its appropriate location. 
 * Time Complexity: O(n^2)
 ### Explanation/Examples
-
+```
+orginal list
+[66, 25, 24, 1, 40]
+```
+```
+insertion: 
+[66, 25, 24, 1, 40]
+[25, 66, 24, 1, 40]
+[25, 24, 66, 1, 40]
+[24, 25, 66, 1, 40]
+[24, 25, 1, 66, 40]
+[24, 1, 25, 66, 40]
+[1, 24, 25, 66, 40]
+[1, 24, 25, 40, 66]
+```
 ## Insertion Sort
 ### Description 
 List is split into sorted and unsorted and elements are placed in the correct sorted position by comparing with adjacent elements and swapping if neccessary. 
@@ -49,5 +64,17 @@ List is split into sorted and unsorted and elements are placed in the correct so
 * The worst case scenario for Insertion Sort's passes would be n-1 because it disregards the last index. Also, Insertion Sort inserts the value where appropriate, so the worst scenario for the comparisons would be the values in the reverse order or descending order from left to right because the function will check the entire array each time it goes through a pass, resulting in the maximum number of comparisons.  
 * Time Complexity: O(n^2)
 ### Explanation/Examples
+```
+orginal list
+[66, 25, 24, 1, 40]
+```
+```
+selection: 
+[66, 25, 24, 1, 40]
+[40, 25, 24, 1, 66]
+[1, 25, 24, 40, 66]
+[1, 24, 25, 40, 66]
+[1, 24, 25, 40, 66]
+```
 
 
