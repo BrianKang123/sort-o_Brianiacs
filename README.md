@@ -1,12 +1,11 @@
 # sort-o_Brianiacs
 ## Roster: Jing Yi Feng, Brian Kang, Brian Wang
-## SOTW:
+## SOTW: The Feels by Twice
 
 ## Bubble Sort
 ### Best Case
 * The best case scenario for Bubble Sort's passes would be n-1 because it disregards the last index. Also, our algorithm of Bubble Sort swaps adjacent values by comparing them, and compares them regardless of whether or not they have been previously swapped, or if they are already sorted. The algorithm also will make all the passes through the arrayList regardless of if it is already sorted due to the code not knowing whether or not it is sorted. Therefore, the best and worst cases differ only in the time it takes to actually swap elements.
 ### Worst Case
-<<<<<<< HEAD
 * The worst case scenario for Bubble Sort would be if the list is sorted in descending order.
 =======
 * The worst case scenario for Bubble Sort's passes would be n-1 as well because like the best case scenario, it disregards the last index. Also, Bubble Sort swaps two at a time, so the worst case for the comparisons would be the same as the best scenario for the comparisons because bubble checks through the entire array each time and on repeat.    
