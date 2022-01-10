@@ -59,10 +59,10 @@ selection:
 ```
 ## Insertion Sort
 ### Description/ALGO
-Partition list into sorted and unsorted regions, start between element 0 and element 1
-Walk element from unsorted to proper position in sorted list by comparing the values and swapping if necessary
-Increase size of partition by 1 each time
-Once partition is at the end of the list, the list is sorted 
+1. Partition list into sorted and unsorted regions, start between element 0 and element 1
+2. Walk element from unsorted to proper position in sorted list by comparing the values and swapping if necessary
+3. Increase size of partition by 1 each time
+4. Once partition is at the end of the list, the list is sorted 
 ### Best Case
 * The best case scenario for Insertion Sort's passes would be n-1 because it disregards the last index. Also, Insertion Sort inserts the value where appropriate, so the best scenario for the comparisons would be the values in ascending order from left to right because the function checks for each index only once and moves on to the next one, only making n-1 comparisons.  
 * Time Complexity: O(n)
