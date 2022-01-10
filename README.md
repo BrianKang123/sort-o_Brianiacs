@@ -12,12 +12,16 @@ Swaps adjacent elements if they are in the wrong order until entire list is orde
 * The worst case scenario for Bubble Sort's passes would be n-1 as well because like the best case scenario, it disregards the last index. Also, Bubble Sort swaps two at a time, so the worst case for the comparisons would be the same as the best scenario for the comparisons because bubble checks through the entire array each time and on repeat.    
 
 ## Selection Sort
+### Description
+Searches for the smallest element in the array and swaps it to the front of the array and keep doing so until list is sorted. 
 ### Best Case
 * The best case scenario for Selection Sort's passes would be n-1 because it disregards the last index. Also, Selection Sort selects and moves, so the best scenario for the comparisons would be the same as the worst scenario for the comparisons because the function goes through the same iteration of selecting through each value in the array and placing it in its appropriate location.
 ### Worst Case
 * The worst case scenario for Selection Sort's passes would be n-1 as well because like the best case scenario, it disregards the last index. Also, Selection Sort selects and moves, so the worst scenario for the comparisons would be the same as the best scenario for the comparisons because the function goes through the same iteration of selecting through each value in the array and placing it in its appropriate location. 
 
 ## Insertion Sort
+### Description 
+List is split into sorted and unsorted and elements are placed in the correct sorted position by comparing with adjacent elements and swapping if neccessary. 
 ### Best Case
 * The best case scenario for Insertion Sort's passes would be n-1 because it disregards the last index. Also, Insertion Sort inserts the value where appropriate, so the best scenario for the comparisons would be the values in ascending order from left to right because the function checks for each index only once and moves on to the next one, only making n-1 comparisons.  
 ### Worst Case
